@@ -64,11 +64,13 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 
 .enlace-login {
     margin-top: 15px;
+    padding: 20px;
 }
 
 .enlace-login a {
@@ -78,6 +80,7 @@ button {
 
 .enlace-login a:hover {
     text-decoration: underline;
+    
 }
 
 
