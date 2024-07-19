@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.barra-lateral {
+    width: 250px;
+    background-color: #087021;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.nav-admin ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-admin li {
+    width: 100%;
+}
+
+.nav-admin a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    transition: background-color 0.6s;
+    margin-bottom: 5px;
+}
+
+.nav-admin a:hover {
+    background-color: #115722;
+    
+}
+
+
+
+/* Contenido principal */
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.contenido-principal section {
+    margin-bottom: 40px;
+}
+
+.contenido-principal h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .barra-lateral {
+        width: 200px;
+    }
+
+    .nav-admin a {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
